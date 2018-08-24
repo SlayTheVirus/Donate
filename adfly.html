@@ -1,7 +1,8 @@
 <h1>You have completed the offer!</h1>
-<script type:"text/javascript">function randomString(length, chars) {
+<script type:"text/javascript">
+function randomString(length, chars) {
     var result = '';
-    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
     return result;
 }
-var rString = randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');</script>
+document.write(randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));</script>
