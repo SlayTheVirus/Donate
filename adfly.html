@@ -52,8 +52,9 @@ function randomString(length, chars) {
 }
 var codeStr = randomString(6, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
-function authCode() = document.write("Confirmation code: " + codeStr)
+function authCode() = document.getElementById("auth").innerHTML = ("Confirmation code: " + codeStr)
 </script>
+    <p id=auth></p>
 <div>
    <script type="text/javascript">
 var adfly_id = 20230611;
